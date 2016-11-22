@@ -101,3 +101,6 @@
 	path = home/.vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
 	branch = master
+[submodule "home/.vim/bundle/nerdcommenter"]
+	path = home/.vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
