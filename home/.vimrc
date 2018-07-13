@@ -61,7 +61,8 @@ call pathogen#infect()
   "set nowrap
 
   " assume the /g flag on :s substitutions to replace all matches in a line:
-  set gdefault
+  " TERRIBLE - don't do this - ever
+  set nogdefault
 
   " Load matchit (% to bounce from do to end, etc.)
   runtime! macros/matchit.vim
@@ -137,7 +138,7 @@ call pathogen#infect()
     " Clear old autocmds in group
     autocmd!
     " autoindent with two spaces, always expand tabs
-    autocmd FileType ruby,eruby,yaml set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+    autocmd FileType ruby,eruby,yaml,json set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
     autocmd FileType python set autoindent shiftwidth=4 softtabstop=4 expandtab
     autocmd FileType javascript,html,htmldjango,css set autoindent shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType vim set autoindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
